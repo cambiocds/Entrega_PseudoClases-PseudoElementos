@@ -1,0 +1,83 @@
+<!--seudoclases y pseudoelementos: EJERCICIO 
+1.En un html nuevo en blanco copiar la letra de esta canción: https://www.letras.com/fito-fitipaldis/614056/ 
+2.Cada estrofa será un elemento <div> y cada verso un elemento <p>
+3.Al principio habrá un elemento <p> con el nombre de la canción
+4.Al final de todo habrá otro párrafo <p> con el nombre del autor
+5.Antes del nombre del autor habrá otro párrafo con la url de donde obtenemos la letra.
+6.La primera letra de cada estrofa será más grande, negrita y cursiva.
+7.Las estrofas pares tendrán fondo gris y las otras fondo blanco
+8.El fondo del documento será gris más oscuro
+9.El último verso de cada estrofa terminará con puntos suspensivos (no se debe modificar el texto copiado)
+10.Luego de cada verso habrá 12px y luego de cada estrofa habrá 36px.
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter {
+            color: #ff0000;
+            font-size: xx-large;
+            font: bold;
+            font-style: oblique;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div>
+        <div>
+            <p>Soldadito Marinero</p>
+        </div>
+
+        <div>
+            <p>Él camina despacito que las prisas no son buenas</p>
+            <p>En su brazo dobladita, con cuidado la chaqueta</p>
+            <p>Luego pasa por la calle dónde los chavales juegan</p>
+            <p> Él también quiso ser niño pero le pilló la guerra</p>
+        </div>
+        <div>
+            <p>Soldadito marinero conociste a una sirena</p>
+            <p>De esas que dicen te quiero si ven la cartera llena</p>
+            <p>Escogiste a la más guapa y a la menos buena</p>
+            <p>Sin saber como ha venido te ha cogido la tormenta</p>
+        </div>
+        <div>
+            <p>Él quería cruzar los mares y olvidar a su sirena</p>
+            <p>a verdad, no fue difícil cuando conoció a Mariela</p>
+            <p>Que tenía los ojos verdes y un negocio entre las piernas</p>
+            <p>Hay que ver que puntería, no te arrimas a una buena</p>
+        </div>
+        <div>
+            <p>Soldadito marinero conociste a una sirena</p>
+            <p>De esas que dicen te quiero si ven la cartera llena</p>
+            <p>Escogiste a la más guapa y a la menos buena</p>
+            <p>Sin saber como ha venido te ha cogido la tormenta</p>
+        </div>
+        <div>
+            <p>Después de un invierno malo, una mala primavera</p>
+            <p>Dime por que estas buscando una lágrima en la arena</p>
+            <p>Después de un invierno malo, una mala primavera</p>
+            <p>Dime por que estas buscando una lágrima en la arena</p>
+            <p>Después de un invierno malo, una mala primavera</p>
+            <p>Dime por que estas buscando una lágrima en la arena</p>
+            <p> Después de un invierno malo...</p>
+        </div>
+        <div>
+          <p>- <a href='https://www.letras.com/fito-fitipaldis/614056/'> Letras.com</a>  Tema: Soldadito marinero</p>
+            <p>Fito y Fitipaldis</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
