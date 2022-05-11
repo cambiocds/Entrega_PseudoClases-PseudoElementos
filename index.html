@@ -25,71 +25,110 @@
             font-weight: bold;
             font-style: oblique;
         }
-        div:nth-child(2n+1){
-            background-color: lightgrey;
-        }
 
-        div:nth-child(2n){
-            background-color: white;
-        }
-        
-        div:nth-child(1){
+        div:nth-child(2n+1) {background-color: lightgrey;}
+        div:nth-child(2n) {background-color: white;}
+        div:nth-child(1) {
             background-color: white;
             font-style: normal;
         }
-        
-        p.end::after{
-            content:" ..."
-        }
-        body{
-            background-color: grey;
-        }
-        p{
-            padding-bottom: 12px;
-        }
-        div{ /*  Se pide 36 px de separacion que serian los 12 que dan los p mas estos 24 */
+
+        p.end::after {content: " ...";}
+        body {background-color: grey;}
+        p {padding-bottom: 12px;}
+
+        div {
+            /*  Se pide 36 px de separacion que serian los 12 que dan los p mas estos 24 */
             padding-top: 12px;
             padding-bottom: 12px;
         }
+
+        /*----------------Zona de modales--------------------------------*/
+        .modalContenido{
+            background-color:aqua;
+            width:300px;
+            padding: 10px 20px;
+            margin: 20% auto;
+            position: relative;
+        }
+        .modalContenedor{
+            background-color: rgba(110, 99, 99, 0.8) !important;
+            position:fixed;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            opacity:0;
+            pointer-events:none; 
+            transition: all 1s; 
+        }
+        #video:target{
+            opacity:1;
+            pointer-events:auto;
+        }
+        h2{
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+         /*----------------FIN Zona de modales--------------------------------*/
+
 
     </style>
 </head>
 
 <body>
+    <p> Soldadito Marinero</p>
+    <div>
+        <p>Él camina despacito que las prisas no son buenas</p>
+        <p>En su brazo dobladita, con cuidado la chaqueta</p>
+        <p>Luego pasa por la calle dónde los chavales juegan</p>
+        <p class='end'>Él también quiso ser niño pero le pilló la guerra</p>
+    </div>
+    <div>
+        <p>Soldadito marinero conociste a una sirena</p>
+        <p>De esas que dicen te quiero si ven la cartera llena</p>
+        <p>Escogiste a la más guapa y a la menos buena</p>
+        <p class='end'>Sin saber como ha venido te ha cogido la tormenta</p>
+    </div>
+    <div>
+        <p>Él quería cruzar los mares y olvidar a su sirena</p>
+        <p>la verdad, no fue difícil cuando conoció a Mariela</p>
+        <p>Que tenía los ojos verdes y un negocio entre las piernas</p>
+        <p class='end'>Hay que ver que puntería, no te arrimas a una buena</p>
+    </div>
+    <div>
+        <p>Soldadito marinero conociste a una sirena</p>
+        <p>De esas que dicen te quiero si ven la cartera llena</p>
+        <p>Escogiste a la más guapa y a la menos buena</p>
+        <p class='end'>Sin saber como ha venido te ha cogido la tormenta</p>
+    </div>
+   
+    <div>
+        <p>Después de un invierno malo, una mala primavera</p>
+        <p>Dime por que estas buscando una lágrima en la arena</p>
+        <p class='end'>Después de un invierno malo</p>
+    </div>
+    
+    <!-- ----------------Zona de modales-------------------------------- -->
+    <div>
+        <p>- <a href='https://www.letras.com/fito-fitipaldis/614056/'> Letras.com</a> Tema: Soldadito marinero</p>
+        <p>Fito y Fitipaldis</p>
+        <a href="#video">Video</a> &laquo &laquo ----------- SOY EL MODAL
+        <div id="video" class="modalContenedor">
+            <div class="modalContenido">
+                <a href="#"><img src="xico.png" width="20" height="20"></a>
+                <h2>Video</h2>
+                <p>Atención saldrá de esta página hacia <a href='https://www.youtube.com/watch?v=GxQjx7FkmNA'>https://www.youtub...</a></p>
+            </div>  
+        </div>
+    </div>
+     <!-- ----------------FIN Zona de modales-------------------------------- -->
+    
 
-            <p> Soldadito Marinero</p>
-        <div>
-            <p>Él camina despacito que las prisas no son buenas</p>
-            <p>En su brazo dobladita, con cuidado la chaqueta</p>
-            <p>Luego pasa por la calle dónde los chavales juegan</p>
-            <p class='end'>Él también quiso ser niño pero le pilló la guerra</p>
-        </div>
-        <div>
-            <p>Soldadito marinero conociste a una sirena</p>
-            <p>De esas que dicen te quiero si ven la cartera llena</p>
-            <p>Escogiste a la más guapa y a la menos buena</p>
-            <p class='end'>Sin saber como ha venido te ha cogido la tormenta</p>
-        </div>
-        <div>
-            <p>Él quería cruzar los mares y olvidar a su sirena</p>
-            <p>la verdad, no fue difícil cuando conoció a Mariela</p>
-            <p>Que tenía los ojos verdes y un negocio entre las piernas</p>
-            <p class='end'>Hay que ver que puntería, no te arrimas a una buena</p>
-        </div>
-        <div>
-            <p>Soldadito marinero conociste a una sirena</p>
-            <p>De esas que dicen te quiero si ven la cartera llena</p>
-            <p>Escogiste a la más guapa y a la menos buena</p>
-            <p class='end'>Sin saber como ha venido te ha cogido la tormenta</p>
-        </div>
-        <div>
-            <p>Después de un invierno malo, una mala primavera</p>
-            <p>Dime por que estas buscando una lágrima en la arena</p>
-            <p class='end'>Después de un invierno malo</p>
-        </div>
-        <div>
-            <p>- <a href='https://www.letras.com/fito-fitipaldis/614056/'> Letras.com</a> Tema: Soldadito marinero</p>
-            <p>Fito y Fitipaldis</p>
-        </div>
+
+
+
 </body>
+
 </html>
